@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topitems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/txprice"
+        android:layout_marginRight="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/txtFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txprice"
+        android:layout_alignBottom="@+id/txprice"
+        android:layout_alignParentLeft="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Kshs  100"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/orange"
+        android:textSize="14sp" />
+
+</RelativeLayout>

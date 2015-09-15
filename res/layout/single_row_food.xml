@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/itemsImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/itemsImage"
+        android:background="@color/light_gry" />
+
+    <TextView
+        android:id="@+id/txtFood_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="TextView"
+        android:textColor="@color/brown_actBar"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtingredients_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Joel Kipchirchir"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_grey"
+        android:textSize="11sp" />
+
+        <!-- android:focusableintouchmode="false" -->
+
+    <TextView
+        android:id="@+id/txtprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtFood_name"
+        android:layout_alignBottom="@+id/txtFood_name"
+        android:layout_toLeftOf="@+id/checkBoxStatus"
+        android:text="Kshs 300"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/orange"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStatus"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtingredients_name"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>
